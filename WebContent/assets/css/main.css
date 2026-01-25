@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #DAE0E6;
+    margin: 0;
+    padding-top: 50px; /* For fixed header */
+}
+
+/* Header Styles */
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: white;
+    border-bottom: 1px solid #edeff1;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background: #FF4500;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 18px;
+    display: none; /* Hidden on small screens */
+}
+
+@media (min-width: 768px) {
+    .logo-text {
+        display: block;
+    }
+}
+
+.header-center {
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #edeff1;
+    background-color: #f6f7f8;
+    font-size: 14px;
+}
+
+.search-bar input:focus {
+    background-color: white;
+    border-color: #0079d3;
+    outline: none;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.create-post-btn {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: #1c1c1c;
+    transition: background 0.2s;
+    margin-right: 16px;
+}
+
+.create-post-btn:hover {
+    background-color: #edeff1;
+}
+
+.plus-icon {
+    font-size: 20px;
+    margin-right: 4px;
+    line-height: 1;
+}
+
+.user-actions .icon-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #1c1c1c;
+}
+
+.user-actions .icon-btn:hover {
+    background-color: #edeff1;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
